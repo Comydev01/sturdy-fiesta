@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+:root{
+  --color-primary:#006241;
+  --color-secondary:#d50032;
+  --color-extra:#d4e9e2;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+font-family: 'Open Sans', sans-serif;
+line-height: 1.4;
+color: #000;
+}
+a{
+  color: #000;
+}
+ul{
+list-style: none;
+}
+p{
+  margin: 5p 0px;
+  line-height: 1.4;
+}
+img{
+  width: 50%;
+  height: 100%;
+  /*padding-left: 20px;*/
+}
+/*navbar*/
+.navbar{
+width: 100%;
+height: auto;
+background-color: #fff;
+padding: 20px;
+box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+}
+
+.navbar-brand img{
+  width: 50px;
+  height: 50px; 
+}
+.navbar_nav_right img{
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+.navbar_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul{
+  display: flex;
+  align-items: center;
+}
+.navbar li {
+margin: 0 15px;
+font-weight: bold;
+}
+.navbar a {
+  text-decoration: none;
+  color: #000;
+}
+.navbar a:hover{
+  color: var(--color-primary);
+}
+.navbar_nav_left{
+  text-transform:uppercase;
+  flex:1;
+  margin-left: 20px;
+}
+.navbar_nav_right li :first-child a {
+  display: flex;
+  align-items: center;
+}
+/*buttons*/
+.btn{
+  cursor: pointer;
+  background: none;
+  border: 1px #000 solid;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 7px 16px; 
+  text-align: center;
+  line-height: 1.7;
+  text-decoration: none;
+}
+.btn-dark-outline{
+  border-color: #000;
+  color: #000;
+}
+.btn-dark{
+  background-color: #000;
+  color: #fff;
+}
+.btn-light-outline{
+  border-color:#fff;
+  color:#fff;
+}
+.btn-dark-outline:hover{
+  background-color: rgb(177, 177, 177);
+}
+.btn-dark:hover{
+  background-color: #333;
+}
+.navbar_nav_right li :nth-child(2){
+margin: 0 5px;
+}
+/* this is for all the backgrounds*/
+.bg-primary{
+  background-color: var(--color-primary);
+  color: #fff;
+}
+/*Grids*/
+.grid-col-2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+grid-reversed:first-child{
+  order: 2;
+}
+.bg-secondary{
+  background-color: var(--color-secondary);
+  color: #000;
+}
+.bg-extra{
+  background-color: var(--color-extra);
+  color: #000;
+}
+.bg-dark{
+  background-color: var(--color-dark);
+  color: #000;
+}
+/*this is for the text*/
+.text-center{
+  text-align: center;
+}
+.large-text{
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.lg{
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.medium-text{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.small-text{
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+/*box*/
+.box{
+  margin-bottom: 30px;
+}
+.box-inner{
+  margin: 0 auto;
+  max-width: 700px;
+}
+.text-in-box{
+  max-width: 500px;
+}
+section a {
+  color: #fff;
+}
+/* for all the padding*/
+py-sm{
+  padding: 10px 0;
+}
+py-md{
+  padding: 20px 0;
+}
+py-lg{
+  padding: 40px 0;
+}
+@media(max-width:960px){
+.large-text {
+    font-size: 30px;
+  }
+.lg{
+  font-size: 25px;
+}
+.medium-text{
+  font-size: 19px;
+}
+}
+/*media queries et responsiveness*/
+@media (min-width:1440px) {
+  .box{
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  } 
+}
+@media (max-width:960px) {
+.large-text{
+  font-size: 30px;
+}  
+.lg{
+  font-size: 25px;
+}
+.medium-text{
+  font-size: 19px;
+}
+}
+.mobile-menu{
+  position: fixed;
+  top: 75px;
+  background-color: #fff;
+}
+/*footer and social*/
+.footer-container{
+  width: 100%;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto; 
+  padding: 0 30px 30px;
+}
